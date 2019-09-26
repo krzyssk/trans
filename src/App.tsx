@@ -1,15 +1,17 @@
 import React from 'react';
 import './App.css';
+import EssayForm from './Xcc';
 
-import Content from './Xcc';
 
 const App: React.FC = () => {
   return (
     <div className="App">
 
-      <Content></Content>
+      <EssayForm></EssayForm>
     </div>
   );
 }
 
 export default App;
+
+

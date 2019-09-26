@@ -1,53 +1,35 @@
 import React from 'react';
 
-class Content extends React.Component {
+class EssayForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            text: ""
+            value: 'Please write your text.'
         };
 
-
-
+        this.handleChange = this.handleChange.bind(this);
     }
 
-
-
-    handleChange = (e) => {
-        this.setState({
-            text: e.target.value
-        });
-
+    handleChange(event) {
+        this.setState({ value: event.target.value });
     }
 
     render() {
         return (
-            <section className="flex">
-                <div className="content flex">
-                    <div className="sandbox flex">
-                        <div className="directions">
-                            <h1>Translate latin alphabeth to cyrillic</h1>
-                            <h3>This tool works offline. It allows you to transliterate Latin text to the Cyryllic alphabet.</h3>
-                        </div>
-                        <form id="nameForm" className="flex">
-                            <div className="form-group">
-                                <textarea
-                                    id="text"
-                                    name="hard"
-                                    value={this.state.text}
+            <div className="example">
+                <h1>Translate latin alphabeth to cyrillic </h1>
+                <h4>This tool works offline. It allows you to transliterate Latin text to the Cyryllic alphabet.</h4>
+                <form >
+                    <textarea id="form" value={this.state.value} onChange={this.handleChange} rows={10} />
+                </form>
 
-                                    rows={20}
-                                    onChange={this.handleChange}
-                                    wrap="hard"
-                                >
-                                </textarea>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        )
+            </div>
+        );
     }
 }
 
-export default Content;
+
+
+export default EssayForm;
+
+
