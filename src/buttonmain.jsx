@@ -1,17 +1,26 @@
-import React, { Component }  from "react";
-import Buttonh from './button';
+import React, { Component } from "react";
 
 
 class ButtonMain extends Component {
-    render() {
-      return  (
+  render() {
+    let item = ["d", "dd"];
+    return (
 
-          <Buttonh value={333333}></Buttonh>
-
+      <Buttonh value={item} ></Buttonh>
     )
-    
-    }
   }
+}
+
+class Buttonh extends React.Component {
+  render() {
+    return (
+      <button className="button">
+        {this.props.value}
+      </button>
+    )
+  }
+}
+
 export default ButtonMain;
 
 
