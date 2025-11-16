@@ -10,7 +10,7 @@
     "prettier": "^1.18.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.2",
+    "react-scripts": "5.0.1",
     "styled-components": "^4.4.0",
     "typescript": "3.6.3"
   },
@@ -38,7 +38,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.3.1",
     "@typescript-eslint/parser": "^2.3.1",
-    "eslint": "^6.5.0",
+    "eslint": "^9.39.1",
     "eslint-plugin-react": "^7.14.3"
   }
 }
